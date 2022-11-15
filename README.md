@@ -1,6 +1,10 @@
-# iti0105-2022
+# Tudengipood
 
+## Kasutatud allikad
 
+Emoji'd: [Twemoji](https://twemoji.twitter.com/)
+
+<hr>
 
 ## Getting started
 
