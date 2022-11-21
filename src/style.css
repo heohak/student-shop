@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------ */
+/* Debug */
+/*http://yysource.com/2011/03/debugging-with-css-outline-all-elements/*/
+/** { outline: 2px dotted red }*/
+/** * { outline: 2px dotted green }*/
+/** * * { outline: 2px dotted orange }*/
+/** * * * { outline: 2px dotted blue }*/
+/** * * * * { outline: 1px solid red }*/
+/** * * * * * { outline: 1px solid green }*/
+/** * * * * * * { outline: 1px solid orange }*/
+/** * * * * * * * { outline: 1px solid blue }*/
+
+/* ------------------------------------------------------------------ */
+/* General */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    /*https://systemfontstack.com/*/
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+:root {
+    --color-primary: #E83E8C;
+    /*--color-text-light:*/
+}
+
+/* ------------------------------------------------------------------ */
+/* Header */
+header {
+    min-height: 3em;
+
+    /*text-align: center;*/
+
+    background-color: var(--color-primary);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*align-content: center;*/
+}
+
+header * {
+    color: white;
+}
+
+header #logo img {
+    height: 100%;
+    max-height: 4em;
+
+    margin: 0.4em;
+}
+
+header #nav {
+    display: inline-flex;
+    gap: 1em;
+}
+
+header #nav a {
+    text-decoration: none;
+}
+
+header .cart {
+    margin-right: 1em;
+}
+
