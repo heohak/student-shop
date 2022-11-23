@@ -12,89 +12,120 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/front-page.css">
 </head>
 <body>
-    
-<h1 class="title">Kuumad Tooted</h1>
-<div class="product-grid-container">
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/hoodie.webp" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <span class="product-seller">ITYK</span>
-            <h3 class="product-title">Lilla pusa</h3>
-            <h3 class="product-price">19,99$</h3>
-        </div>
-    </div>
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/hat.jfif" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <span class="product-seller">Lapikud</span>
-            <h3 class="product-title">hall müts</h3>
-            <h3 class="product-price">8,99$</h3>
-        </div>
-    </div>
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/termos.jpg" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <span class="product-seller">Robotiklubi</span>
-            <h3 class="product-title">Termos</h3>
-            <h3 class="product-price">10,99$</h3>
-        </div>
-    </div>
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/pants.jfif" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <span class="product-seller">KK</span>
-            <h3 class="product-title">Püksid</h3>
-            <h3 class="product-price">12,99$</h3>
-        </div>
-    </div>
-</div>
-<h1 class="title">Organisatsioonid</h1>
-<div class="product-grid-container">
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/ityk.jfif" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <h3 class="product-title">ITYK</h3>
-        </div>
-    </div>
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/lapikud.png" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <h3 class="product-title">Lapikud</h3>
-        </div>
-    </div>
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/mtyk.jfif" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <h3 class="product-title">MTYK</h3>
-        </div>
-    </div>
-    <div class="product-container">
-        <div class="product-image-wrapper">
-            <img src="pildid/robotiklubi.png" alt="" class="product-image">
-        </div>
-        <div class="product-info-container">
-            <h3 class="product-title">Robotiklubi</h3>
-        </div>
-    </div>
-</div>
+    <header>
+        <a href="/">
+            <div id="logo">
 
+                <img src="images/logo.svg" alt="Tudengipoe logo">
+                <span id="logo__title">Tudengipood</span>
 
+            </div>
+        </a>
+
+        <nav id="nav">
+            <a href="/">Avaleht</a>
+            <a href="">Organisatsioonid</a>
+            <a href="">Meist</a>
+        </nav>
+
+        <a href="">
+            <div id="cart">
+                <img src="images/shopping-bag.svg" alt="Ostukorv">
+                <span id="cart__title">Ostukorv</span>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <h1 class="title">Praegu kuum</h1>
+            <div class="product-grid-container">
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/hoodie.webp" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <span class="product-seller">ITYK</span>
+                        <h3 class="product-title">Lilla pusa</h3>
+                        <h3 class="product-price">19,99€</h3>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/hat.jfif" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <span class="product-seller">Lapikud</span>
+                        <h3 class="product-title">Hall müts</h3>
+                        <h3 class="product-price">8,99€</h3>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/termos.jpg" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <span class="product-seller">Robotiklubi</span>
+                        <h3 class="product-title">Termos</h3>
+                        <h3 class="product-price">10,99€</h3>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/products/pants.jfif" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <span class="product-seller">KK</span>
+                        <h3 class="product-title">Püksid</h3>
+                        <h3 class="product-price">12,99€</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <h1 class="title">Organisatsioonid</h1>
+            <div class="product-grid-container">
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/org/ityk.jfif" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-title">ITYK</h3>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/org/lapikud.png" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-title">Lapikud</h3>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/org/mtyk.jfif" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-title">MTYK</h3>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-image-wrapper">
+                        <img src="images/org/robotiklubi.png" alt="" class="product-image">
+                    </div>
+                    <div class="product-info-container">
+                        <h3 class="product-title">Robotiklubi</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

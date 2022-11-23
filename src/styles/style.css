@@ -1,0 +1,87 @@
+/* ------------------------------------------------------------------ */
+/* Debug */
+/*http://yysource.com/2011/03/debugging-with-css-outline-all-elements/*/
+/** { outline: 2px dotted red }*/
+/** * { outline: 2px dotted green }*/
+/** * * { outline: 2px dotted orange }*/
+/** * * * { outline: 2px dotted blue }*/
+/** * * * * { outline: 1px solid red }*/
+/** * * * * * { outline: 1px solid green }*/
+/** * * * * * * { outline: 1px solid orange }*/
+/** * * * * * * * { outline: 1px solid blue }*/
+
+/* ------------------------------------------------------------------ */
+/* General */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    /*https://systemfontstack.com/*/
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+:root {
+    --color-primary: #E83E8C;
+    --color-light: white;
+}
+
+/* ------------------------------------------------------------------ */
+/* Header */
+header {
+    min-height: 3em;
+
+    background-color: var(--color-primary);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1.75em;
+}
+
+header * {
+    color: var(--color-light);
+    text-decoration: none; /* Links won't be highlighted */
+}
+
+header #logo,
+header #cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0.65em 1em;
+}
+
+header #logo img {
+    min-height: 3em;
+    max-height: 4em;
+
+    margin-right: 0.5em;
+}
+
+header #cart img {
+    max-height: 2.8em;
+
+    margin-right: 0.5em;
+}
+
+header #logo__title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+header #nav {
+    display: inline-flex;
+    gap: 1em;
+}
+
+header #nav a:not(:last-of-type):after {
+    content: "|";
+    position: relative;
+    left: 0.5em;
+    opacity: 0.5;
+}
