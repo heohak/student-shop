@@ -79,6 +79,10 @@ header #nav {
     gap: 1em;
 }
 
+header #nav, #cart__title {
+    font-size: larger;
+}
+
 header #nav a:not(:last-of-type):after {
     content: "|";
     position: relative;
