@@ -88,19 +88,16 @@ main {
     flex-direction: column;
 }
 
-.about-image-wrapper {
-    width: 100%;
-    overflow: hidden;
-}
-
 .about-image {
-    width: 500px;
-    object-fit: contain;
+    width: 30em;
+
+    border-radius: 5px;
 }
 
 .about-info-container {
     background: lightgray;
     border-radius: 5px;
+    padding: 1em;
 }
 
 .about-info {
