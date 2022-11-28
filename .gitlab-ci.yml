@@ -10,6 +10,7 @@ pages:
   script:
     - mkdir .public
     - cp -r ./src/* .public
+    - find . -type f -exec sed -i 's/<base href="\/iti0105-2022\/src\/">/<base href="\/iti0105-2022\/">/' {} +  # Replaces base elements' href with right base URL
     - rm -rf public
     - mv .public public
   artifacts:
