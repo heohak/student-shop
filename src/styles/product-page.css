@@ -1,20 +1,3 @@
-/* General */
-:root {
-    --color-primary: #E83E8C;
-    --color-light: white;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-}
-
-/* ------------------------------------------------------------------ */
 /* Product page */
 .small-container {
     max-width: 1000px;
