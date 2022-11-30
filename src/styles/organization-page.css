@@ -1,0 +1,23 @@
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    margin: 5rem auto 0 auto;
+}
+
+.section img{
+    height: 250px;
+}
+
+.section h1{
+    color: black;
+    margin-bottom: 0.3em;
+}
+.section p{
+    color: black;
+}
+
+.text {
+    margin-right: 1em;
+}
