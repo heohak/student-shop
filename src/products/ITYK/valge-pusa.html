@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tudengipood</title>
+
+    <!-- /iti0105-2022/src/ is replaced with production slug /iti0105-2022/ in .gitlab-ci.yml -->
+    <base href="/iti0105-2022/src/">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/product-page.css">
+
+</head>
+
+<!-- Body -->
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <div id="logo">
+
+                <img src="images/logo.svg" alt="Tudengipoe logo">
+                <span id="logo__title">Tudengipood</span>
+
+            </div>
+        </a>
+
+        <nav id="nav">
+            <a href="index.html">Avaleht</a>
+            <a href="index.html#organizations">Organisatsioonid</a>
+            <a href="index.html#about">Meist</a>
+        </nav>
+
+        <a href="index.html">
+            <div id="cart">
+                <img src="images/shopping-bag.svg" alt="Ostukorv">
+                <span id="cart__title">Ostukorv</span>
+            </div>
+        </a>
+    </header>
+
+    <!-- Main (between header & footer) -->
+    <main>
+        <section class="small-container single-product">
+            <div class="single-product-row">
+
+                <!--  Left column (contains the picture gallery) -->
+                <div class="col-2">
+
+                    <img src="images/products/ITYK/Valge-pusa/valge_pusa_1.webp" width="100%" id="ProductImg">
+                    <div class="small-img-row">
+
+                        <div class="small-img-col">
+                            <img src="images/products/ITYK/Valge-pusa/valge_pusa_1.webp"
+                                 width="100%" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="images/products/ITYK/Valge-pusa/valge_pusa_2.webp"
+                                 width="100%" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="images/products/ITYK/Valge-pusa/valge_pusa_3.webp"
+                                 width="100%" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="images/products/ITYK/Valge-pusa/valge_pusa_4.webp"
+                                 width="100%" class="small-img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  Right column (contains the product information and peripherals) -->
+                <div class="col-2">
+
+                    <p>Avaleht / ITÜK / Valge pusa</p>
+
+                    <h1>Valge pusa</h1>
+
+                    <h4>19.99€</h4>
+
+                    <select>
+                        <option>Vali suurus</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+
+                    <a href="" class="single-product-button" id="button">Lisa ostukorvi</a>
+
+                    <h3>Toote kirjeldus</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Kontaktid</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Üldtingimused</a></li>
+                    <li><a href="#">Juriidiline teave</a></li>
+                    <li><a href="#">Tööpakkumised</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                Rahamehed Copyright © 2022 - Kõik õigused kaitstud.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

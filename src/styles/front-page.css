@@ -1,3 +1,4 @@
+/* General */
 :root {
     --color-caption: #999;
     --color-price: #121212;
@@ -17,6 +18,8 @@
     margin-bottom: 0.25em;
 }
 
+/* ------------------------------------------------------------------ */
+/* Product and organisation sections */
 .product-grid-container{
     display: flex;
     justify-content: center;
@@ -70,17 +73,16 @@
     font-size: larger;
     margin: 0.25em 0;
     font-weight: 500;
+    text-decoration: none;
+    color: var(--color-price)
 }
 
 .product-price {
     color: var(--color-price);
 }
 
-/* Gradient for main
-main {
-    background: linear-gradient(to bottom, rgba(232, 62, 140, 0.4), rgba(255, 255, 255, 1));
-}
- */
+/* ------------------------------------------------------------------ */
+/* About us section */
 .about-container {
     margin: 1em 2em;
     display: flex;
