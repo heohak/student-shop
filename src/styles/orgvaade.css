@@ -1,0 +1,22 @@
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    margin: 10rem auto 0 auto;
+}
+
+.section img{
+    height: 250px;
+}
+
+.section h1{
+    color: black;
+    margin: 0;
+
+}
+.section p{
+    color: black;
+}
+
