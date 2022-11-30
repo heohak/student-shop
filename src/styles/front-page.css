@@ -1,3 +1,4 @@
+/* General */
 :root {
     --color-caption: #999;
     --color-price: #121212;
@@ -17,6 +18,8 @@
     margin-bottom: 0.25em;
 }
 
+/* ------------------------------------------------------------------ */
+/* Product and organisation sections */
 .product-grid-container{
     display: flex;
     justify-content: center;
@@ -70,38 +73,52 @@
     font-size: larger;
     margin: 0.25em 0;
     font-weight: 500;
+    text-decoration: none;
+    color: var(--color-price)
 }
 
 .product-price {
     color: var(--color-price);
 }
 
-/* Gradient for main
-main {
-    background: linear-gradient(to bottom, rgba(232, 62, 140, 0.4), rgba(255, 255, 255, 1));
+/* ------------------------------------------------------------------ */
+/* About us section */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
 }
- */
+
 .about-container {
-    margin: 1em 2em;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.about-image {
-    width: 30em;
-
-    border-radius: 5px;
+.about {
+    margin-bottom: 40px;
 }
 
-.about-info-container {
-    background: lightgray;
-    border-radius: 5px;
-    padding: 1em;
+.about-column img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.about .about-column img {
+    padding: 0;
+}
+
+.about .about-column {
+    padding: 20px;
+}
+
+.about-column {
+    flex-basis: 50%;
+    min-width: 300px;
 }
 
 .about-info {
-    font-weight: 200;
-    text-align: justify;
+    font-weight: 400;
 }

@@ -17,7 +17,7 @@
 *::after{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 
     /*https://systemfontstack.com/*/
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
@@ -26,6 +26,11 @@
 :root {
     --color-primary: #E83E8C;
     --color-light: white;
+}
+
+::selection {
+    color: var(--color-light);
+    background: var(--color-primary);
 }
 
 /* ------------------------------------------------------------------ */
@@ -39,7 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding-bottom: 1.75em;
+    margin-bottom: 1.75em;
 }
 
 header * {
@@ -94,17 +99,13 @@ header #nav a:not(:last-of-type):after {
 /* Footer */
 .footer{
     background:#E83E8C;
-    padding:30px 0;
-    font-family: 'Play', sans-serif;
-    text-align:center;
+    padding:2em ;
 }
 
 .footer .row{
     width:100%;
-    margin:1% 0;
-    padding:0.6% 0;
     color:white;
-    font-size:0.8em;
+    text-align: center;
 }
 
 .footer .row a{
@@ -134,10 +135,7 @@ header #nav a:not(:last-of-type):after {
 @media (max-width:720px) {
 
 }
-.footer{
-    text-align:left;
-    padding:5%;
-}
+
 .footer .row ul li {
     display:block;
     margin:10px 0;
