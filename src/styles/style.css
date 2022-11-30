@@ -28,6 +28,11 @@
     --color-light: white;
 }
 
+::selection {
+    color: var(--color-light);
+    background: var(--color-primary);
+}
+
 /* ------------------------------------------------------------------ */
 /* Header */
 header {
