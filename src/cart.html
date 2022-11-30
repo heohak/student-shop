@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ostukorv | Tudengipood</title>
+
+    <!-- /iti0105-2022/src/ is replaced with production slug /iti0105-2022/ in .gitlab-ci.yml -->
+    <base href="/iti0105-2022/src/">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cart.css">
+
+</head>
+
+<!-- Body -->
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <div id="logo">
+
+                <img src="images/logo.svg" alt="Tudengipoe logo">
+                <span id="logo__title">Tudengipood</span>
+
+            </div>
+        </a>
+
+        <nav id="nav">
+            <a href="index.html">Avaleht</a>
+            <a href="index.html#organizations">Organisatsioonid</a>
+            <a href="index.html#about">Meist</a>
+        </nav>
+
+        <a href="cart.html">
+            <div id="cart">
+                <img src="images/shopping-bag.svg" alt="Ostukorv">
+                <span id="cart__title">Ostukorv</span>
+            </div>
+        </a>
+    </header>
+
+    <!-- Main (between header & footer) -->
+    <main>
+        <div class="cart-container">
+            <div class="cart-total-price">Kokku: 39€</div>
+            <hr class="cart-divider">
+            <div class="cart-products-container">
+                <div class="cart-product">
+                    <div class="cart-product-image">
+                        <img src="images/products/ITYK/Valge-pusa/valge_pusa_1.webp" alt="">
+                    </div>
+                    <div class="cart-product-title">Hall pusa</div>
+                    <div class="cart-product-price">18,99€</div>
+                </div>
+                <div class="cart-product">
+                    <div class="cart-product-image">
+                        <img src="images/products/ITYK/Valge-pusa/valge_pusa_2.webp" alt="">
+                    </div>
+                    <div class="cart-product-title">Hall pusa</div>
+                    <div class="cart-product-price">18,99€</div>
+                </div>
+                <div class="cart-product">
+                    <div class="cart-product-image">
+                        <img src="images/products/ITYK/Valge-pusa/valge_pusa_3.webp" alt="">
+                    </div>
+                    <div class="cart-product-title">Hall pusa</div>
+                    <div class="cart-product-price">18,99€</div>
+                </div>
+            </div>
+            <hr class="cart-divider">
+            <div class="cart-product cart-product-image">
+                <a href="" class="single-product-button" id="button">Maksma ›</a>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Kontaktid</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Üldtingimused</a></li>
+                    <li><a href="#">Juriidiline teave</a></li>
+                    <li><a href="#">Tööpakkumised</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                Rahamehed Copyright © 2022 - Kõik õigused kaitstud.
+            </div>
+        </div>
+    </footer>
+</body>
+
