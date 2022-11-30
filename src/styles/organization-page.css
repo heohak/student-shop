@@ -1,10 +1,9 @@
-
 .section{
     display: flex;
     justify-content: space-between;
     padding: 40px;
     width: 60%;
-    margin: 10rem auto 0 auto;
+    margin: 5rem auto 0 auto;
 }
 
 .section img{
@@ -13,10 +12,12 @@
 
 .section h1{
     color: black;
-    margin: 0;
-
+    margin-bottom: 0.3em;
 }
 .section p{
     color: black;
 }
 
+.text {
+    margin-right: 1em;
+}
