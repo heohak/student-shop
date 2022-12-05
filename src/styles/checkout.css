@@ -12,9 +12,8 @@ body{
     background-color: #fff;
     width: 500px;
     padding: 25px;
-    margin: 25px auto 0;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    margin-bottom: 25px;
+    margin: 25px auto;
 }
 .wrapper h2{
     background-color: #fcfcfc;
@@ -142,7 +141,6 @@ h4{
 }
 button{
     width: 100%;
-    background: transparent;
     border: none;
     background: #E83E8C;
     color: #fff;
