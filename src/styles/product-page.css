@@ -33,6 +33,15 @@
     cursor: pointer;
 }
 
+.small-img {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.img-active {
+    opacity: 1;
+}
+
 .single-product .col-2 img {
     padding: 0;
 }
