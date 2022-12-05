@@ -18,6 +18,12 @@
     margin-bottom: 0.25em;
 }
 
+@media screen and (max-width: 700px) {
+    .title {
+        font-size: xx-large;
+    }
+}
+
 /* ------------------------------------------------------------------ */
 /* Product and organisation sections */
 .product-grid-container{
