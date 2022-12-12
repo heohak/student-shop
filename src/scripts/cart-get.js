@@ -17,22 +17,23 @@ if (cartContainerElement.innerHTML === "") {
 
 function addCartElementsToPage() {
     getCartObject().forEach(product => {
-        // Add product to cart container
-        cartContainerElement.innerHTML += `
-<div class="cart-product">
+        // Create product element
+        const productElement = document.createElement("div");
+        productElement.className = "cart-product";
 
+        productElement.innerHTML = `
     <div class="cart-product-image">
         <img src="${product.imageUrl}">
     </div>
     <div class="cart-product-title">${product.name} <span class="cart-product-size">(${product.size})</span></div>
-    <div class="cart-product-price">${priceIntToString(product.price)}</div>
+    <div class="cart-product-price">${priceIntToString(product.price)}</div>`
 
-</div>`;
-
-        // Add link to just added element
-        cartContainerElement.lastChild.addEventListener("click", () => {
-           document.location.assign(product.url);
+        productElement.addEventListener("click", () => {
+            document.location.assign(product.url);
         });
+
+        // Add it to cart container
+        cartContainerElement.appendChild(productElement);
     });
 }
 
