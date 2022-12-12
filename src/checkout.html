@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tudengipood</title>
+
+    <!-- /iti0105-2022/src/ is replaced with production slug /iti0105-2022/ in .gitlab-ci.yml -->
+    <base href="/iti0105-2022/src/">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+
+</head>
+
+<!-- Body -->
+<body>
+
+<!-- Header -->
+<header>
+    <a href="index.html">
+        <div id="logo">
+
+            <img src="images/logo.svg" alt="Tudengipoe logo">
+            <span id="logo__title">Tudengipood</span>
+
+        </div>
+    </a>
+
+    <nav id="nav">
+        <a href="index.html">Avaleht</a>
+        <a href="index.html#organizations">Organisatsioonid</a>
+        <a href="index.html#about">Meist</a>
+    </nav>
+
+    <a href="cart.html">
+        <div id="cart">
+            <img src="images/shopping-bag.svg" alt="Ostukorv">
+            <span id="cart__title">Ostukorv</span>
+        </div>
+    </a>
+</header>
+
+<!-- Main (between header & footer) -->
+<main>
+
+    <div class="wrapper">
+        <h2>Maksekorraldus</h2>
+        <form method="POST">
+            <h4>Minu andmed</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Eesnimi" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Perekonnanimi" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="email" placeholder="Emaili aadress" required class="name">
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <h4>Sünnikuupäev</h4>
+                    <input type="text" placeholder="PP" class="dob">
+                    <input type="text" placeholder="KK" class="dob">
+                    <input type="text" placeholder="AAAA" class="dob">
+                </div>
+                <div class="input-box">
+                    <h4> Sugu</h4>
+                    <input type="radio" id="b1" name="gendar" checked class="radio">
+                    <label for="b1">Mees</label>
+                    <input type="radio" id="b2" name="gendar" class="radio">
+                    <label for="b2">Naine</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <h4>Makse andmed</h4>
+                    <input type="radio" name="pay" id="bc1" checked class="radio">
+                    <label for="bc1"><span><i class="fa fa-cc-visa"></i> Krediitkaart</span></label>
+                    <input type="radio" name="pay" id="bc2" class="radio">
+                    <label for="bc2"><span><i class="fa fa-cc-paypal"></i> Paypal</span></label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Kaardi number" required class="name">
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Kaardi CVC" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <select>
+                        <option>08 dets</option>
+                        <option>09 dets</option>
+                        <option>10 dets</option>
+                    </select>
+                    <select>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit">MAKSA KOHE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer">
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Kontaktid</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Üldtingimused</a></li>
+                <li><a href="#">Juriidiline teave</a></li>
+                <li><a href="#">Tööpakkumised</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Rahamehed Copyright © 2022 - Kõik õigused kaitstud.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
