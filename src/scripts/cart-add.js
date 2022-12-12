@@ -1,5 +1,4 @@
 /* Adding to cart functionality. */
-
 const selectedSizeElement = document.querySelector(".size-selector");
 const addToCartElement = document.querySelector(".add-to-cart");
 
@@ -9,23 +8,22 @@ function addToCartClick(event) {
     const selectedSize = selectedSizeElement.value;
 
     if (selectedSize === "Vali suurus") {
-        event.preventDefault();
+        event.preventDefault()  // disable opening cart when size not selected
         alert("Palun valige suurus.");
     } else {
-        event.preventDefault();
-
-        addToCart(getProductName(), selectedSize, getProductURL(), getProductImageURL());
+        addToCart(getProductName(), selectedSize, getProductPrice(), getProductURL(), getProductImageURL());
     }
 }
 
-function addToCart(productName, productSize, productURL, productImageURL) {
+function addToCart(productName, productSize, productPrice, productURL, productImageURL) {
     // Get the current cart from localStorage
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cart = getCartObject();
 
     // Add the new product to the cart
     cart.push({
         name: productName,
         size: productSize,
+        price: productPrice,
         url: productURL,
         imageUrl: productImageURL,
     });
@@ -34,9 +32,19 @@ function addToCart(productName, productSize, productURL, productImageURL) {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+function getCartObject() {
+    return JSON.parse(localStorage.getItem("cart")) || [];
+}
 
 function getProductName() {
     return document.querySelector(".product-title").innerText;
+}
+
+function getProductPrice() {
+    let price = document.querySelector(".product-price").innerText;
+    price = price.replace(",", ".").replace("€", "");
+    price = Number(price);
+    return price
 }
 
 function getProductURL() {
@@ -44,6 +52,5 @@ function getProductURL() {
 }
 
 function getProductImageURL() {
-    return document.querySelector("#ProductImg").src;
+    return document.querySelector(".small-img-col:first-of-type img").src;
 }
-
