@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Valge pusa ITÜK | Tudengipood</title>
+
+    <!-- /iti0105-2022/src/ is replaced with production slug /iti0105-2022/ in .gitlab-ci.yml -->
+    <base href="/iti0105-2022/src/">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/product-page.css">
+
+    <!-- Scripts -->
+    <script defer src="scripts/gallery.js"></script>
+    <script defer src="scripts/cart-add.js"></script>
+</head>
+
+<!-- Body -->
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <div id="logo">
+
+                <img src="images/logo.svg" alt="Tudengipoe logo">
+                <span id="logo__title">Tudengipood</span>
+
+            </div>
+        </a>
+
+        <nav id="nav">
+            <a href="index.html">Avaleht</a>
+            <a href="index.html#organizations">Organisatsioonid</a>
+            <a href="index.html#about">Meist</a>
+        </nav>
+
+        <a href="cart.html">
+            <div id="cart">
+                <img src="images/shopping-bag.svg" alt="Ostukorv">
+                <span id="cart__title">Ostukorv</span>
+            </div>
+        </a>
+    </header>
+
+    <!-- Main (between header & footer) -->
+    <main>
+        <section class="small-container single-product">
+            <div class="single-product-row">
+
+                <!--  Left column (contains the picture gallery) -->
+                <div class="col-2">
+
+                    <img src="images/products/ITYK/Kruus/kruus_1.webp" width="100%" id="product-image-selected">
+                    <div class="small-img-row">
+
+                        <div class="small-img-col">
+                            <img src="images/products/ITYK/Kruus/kruus_1.webp"
+                                 width="100%" class="small-img img-active">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="images/products/ITYK/Kruus/kruus_3.png"
+                                 width="100%" class="small-img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  Right column (contains the product information and peripherals) -->
+                <div class="col-2">
+
+                    <p>Avaleht / ITÜK / Kruus</p>
+
+                    <h1 class="product-title">Kruus</h1>
+
+                    <h4 class="product-price">6,99€</h4>
+
+                    <select class="size-selector">
+                        <option selected disabled>Vali värv</option>
+                        <option value="valge">valge</option>
+                        <option value="roosa">roosa</option>
+                    </select>
+
+                    <a href="cart.html" class="single-product-button add-to-cart">Lisa ostukorvi</a>
+
+                    <h3>Toote kirjeldus</h3>
+                    <br>
+                    <p>Kõige mõnusam kruus hommikuseks teeks, kohviks või piparmündikakaoks. Suurepärane kink jõuludeks! Ei ole Margus.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Kontaktid</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Üldtingimused</a></li>
+                    <li><a href="#">Juriidiline teave</a></li>
+                    <li><a href="#">Tööpakkumised</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                Rahamehed Copyright © 2022 - Kõik õigused kaitstud.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
