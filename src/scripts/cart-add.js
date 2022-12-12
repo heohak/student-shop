@@ -52,5 +52,5 @@ function getProductURL() {
 }
 
 function getProductImageURL() {
-    return document.querySelector(".small-img-col:first-of-type img").src;
+    return document.querySelector("#product-image-selected").src;
 }
